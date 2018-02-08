@@ -1,0 +1,8 @@
+<p>
+  <hr>
+  dashboard works!
+  <input type="text" [(ngModel)]='loadState'>
+  <input type="button" value="Change State" (click)=changeState()>
+  It's {{ loadState }}
+  <p [textContent] = 'loadState'></p>
+</p>
