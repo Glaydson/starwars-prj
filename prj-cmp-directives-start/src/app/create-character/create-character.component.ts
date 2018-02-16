@@ -8,12 +8,13 @@ import { StarWarsService } from '../star-wars.service';
 })
 export class CreateCharacterComponent implements OnInit {
   availableSides = [
-    {display: 'None', value: ''}, 
+    {display: 'None', value: ''},
     {display: 'Light', value: 'light'},
     {display: 'Dark', value: 'dark'}
   ]
 
   swService: StarWarsService;
+  defaultName = 'Obi-Wan';
 
   constructor(swService: StarWarsService) {
     this.swService = swService;
